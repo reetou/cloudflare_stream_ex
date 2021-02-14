@@ -39,7 +39,7 @@ defmodule CloudflareStream.TusClient do
     opts = [
       chunk_len: 5_242_880,
       headers: headers,
-      metadata: %{"name" => "somename"}
+      metadata: metadata
     ]
     path = "priv/static/files/myvideo.mp4"
 
